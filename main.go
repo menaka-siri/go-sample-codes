@@ -5,7 +5,7 @@ import (
 	// "os"
 	// "strings"
 
-	"fmt"
+	// "fmt"
 	// "go-sample-codes/functions/clidemo"
 	// "time"
 	// "go-sample-codes/functions/simpleserver"
@@ -26,11 +26,16 @@ func main() {
 
 	//Typed parameter functions example
 	// Index works on a slice of ints
-	si := []int{10, 20, 15, -10}
-	fmt.Println(functions.Index(si, 15))
+	// si := []int{10, 20, 15, -10}
+	// fmt.Println(functions.Index(si, 15))
 
 	// Index also works on a slice of strings
-	ss := []string{"foo", "bar", "baz"}
-	fmt.Println(functions.Index(ss, "hello"))
+	// ss := []string{"foo", "bar", "baz"}
+	// fmt.Println(functions.Index(ss, "hello"))
+
+	//generic type linked list implementation example
+	head := functions.List[int32]{Next: nil, Val: 1}
+	head.Next = &functions.List[int32]{Next: nil, Val: 2}
+	head.Display()
 
 }
