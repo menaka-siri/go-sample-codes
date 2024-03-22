@@ -1,11 +1,11 @@
 package main
 
 import (
-	"io"
-	"os"
-	"strings"
+	// "io"
+	// "os"
+	// "strings"
 
-	// "fmt"
+	"fmt"
 	// "go-sample-codes/functions/clidemo"
 	// "time"
 	// "go-sample-codes/functions/simpleserver"
@@ -20,8 +20,17 @@ func main() {
 	// clidemo.CliDemo()
 
 	//rot13Reader exercise
-	s := strings.NewReader("Lbh penpxrq gur pbqr!")
-	r := functions.Rot13Reader{R: s}
-	io.Copy(os.Stdout, &r)
+	// s := strings.NewReader("Lbh penpxrq gur pbqr!")
+	// r := functions.Rot13Reader{R: s}
+	// io.Copy(os.Stdout, &r)
+
+	//Typed parameter functions example
+	// Index works on a slice of ints
+	si := []int{10, 20, 15, -10}
+	fmt.Println(functions.Index(si, 15))
+
+	// Index also works on a slice of strings
+	ss := []string{"foo", "bar", "baz"}
+	fmt.Println(functions.Index(ss, "hello"))
 
 }
