@@ -5,11 +5,12 @@ import (
 	// "os"
 	// "strings"
 
-	// "fmt"
+	"fmt"
 	// "go-sample-codes/functions/clidemo"
 	// "time"
 	// "go-sample-codes/functions/simpleserver"
 	"go-sample-codes/functions"
+	"golang.org/x/tour/tree"
 )
 
 func main() {
@@ -34,8 +35,12 @@ func main() {
 	// fmt.Println(functions.Index(ss, "hello"))
 
 	//generic type linked list implementation example
-	head := functions.List[int32]{Next: nil, Val: 1}
-	head.Next = &functions.List[int32]{Next: nil, Val: 2}
-	head.Display()
+	// head := functions.List[int32]{Next: nil, Val: 1}
+	// head.Next = &functions.List[int32]{Next: nil, Val: 2}
+	// head.Display()
+
+	//Equivalent Binary Tree exercise
+	fmt.Println("1 and 1 same: ", functions.Same(tree.New(1), tree.New(1)))
+	fmt.Println("1 and 2 same: ", functions.Same(tree.New(1), tree.New(2)))
 
 }
