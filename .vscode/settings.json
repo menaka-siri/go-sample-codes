@@ -1,4 +1,5 @@
 {
+    // GO Extension Settings --- start
     "go.alternateTools": {
         "go": "${env:HOME}/.asdf/shims/go",
     },
@@ -6,4 +7,5 @@
     "go.toolsEnvVars": {
         "GOPATH": "${env:HOME}/go"
     }
+    // GO Extension Settings --- end
 }
