@@ -13,6 +13,7 @@
 *.dll
 *.so
 *.dylib
+go-sample-codes
 
 # Test binary, built with `go test -c`
 *.test
